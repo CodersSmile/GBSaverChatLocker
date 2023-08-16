@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_back" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_direct" />
+
+                <LinearLayout
+                    android:id="@+id/native_ads"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10dp"
+                android:text="Select Country Code"
+                android:textAppearance="@style/TextAppearance.MyApp.Headline5"
+                android:textColor="@color/blackTheme"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_4dp"
+                android:text="Send Message To Unknown Numbers"
+                android:textAppearance="@style/TextAppearance.MyApp.Body1"
+                android:textColor="@color/blackTheme" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_margin="@dimen/_20dp"
+                android:orientation="horizontal">
+
+                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                    android:id="@+id/spin"
+                    android:layout_width="94dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_edit"
+                    android:gravity="center"
+                    app:ccp_countryNameGravity="center"
+                    app:ccp_defaultCode="91"
+                    app:ccp_showFlag="false"
+                    app:ccp_textColor="@color/blackTheme" />
+
+                <EditText
+                    android:id="@+id/edit_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_edit"
+                    android:elevation="1dp"
+                    android:hint="Enter number"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/blackTheme"
+                    android:textColorHint="@color/blackTheme" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_edit"
+                android:elevation="1dp">
+
+                <EditText
+                    android:id="@+id/text_mess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10dp"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="text here message"
+                    android:textAppearance="@style/TextAppearance.MyApp.Body2"
+                    android:textColor="@color/blackTheme"
+                    android:textColorHint="#CCCCCC"
+                    app:backgroundTint="@color/blackTheme" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/send_btn"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_gradiant"
+                android:gravity="center"
+                android:text="@string/done"
+                android:textAppearance="@style/TextAppearance.MyApp.Headline6"
+                android:textColor="@color/whiteTheme" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

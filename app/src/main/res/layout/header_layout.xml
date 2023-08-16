@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_30dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_splash" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10dp"
+                android:gravity="center_vertical"
+                android:text="@string/app_name1"
+                android:textAppearance="@style/TextAppearance.MyApp.Subtitle1"
+                android:textColor="@color/menuclr" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mTxtchatLocker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_nav_chat"
+            android:drawablePadding="@dimen/_15dp"
+            android:gravity="center_vertical"
+            android:onClick="mOnNavigationClick"
+            android:paddingStart="@dimen/_30dp"
+            android:text="@string/chatlocker"
+            android:textAppearance="@style/TextAppearance.MyApp.Body2"
+            android:textColor="@color/navtxt" />
+
+        <TextView
+            android:id="@+id/mTxtDirectChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26dp"
+            android:drawableStart="@drawable/ic_nav_direct"
+            android:drawablePadding="@dimen/_15dp"
+            android:gravity="center_vertical"
+            android:onClick="mOnNavigationClick"
+            android:paddingStart="@dimen/_30dp"
+            android:text="@string/directchat"
+            android:textAppearance="@style/TextAppearance.MyApp.Body2"
+            android:textColor="@color/navtxt" />
+
+        <TextView
+            android:id="@+id/mTxtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26dp"
+            android:layout_marginBottom="@dimen/_26dp"
+            android:drawableStart="@drawable/ic_nav_status"
+            android:drawablePadding="@dimen/_15dp"
+            android:gravity="center_vertical"
+            android:onClick="mOnNavigationClick"
+            android:paddingStart="@dimen/_30dp"
+            android:text="@string/status"
+            android:textAppearance="@style/TextAppearance.MyApp.Body2"
+            android:textColor="@color/navtxt" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/navtxt" />
+
+        <TextView
+            android:id="@+id/mTxtShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26dp"
+            android:drawableStart="@drawable/ic_nav_share"
+            android:drawablePadding="@dimen/_15dp"
+            android:gravity="center_vertical"
+            android:onClick="mOnNavigationClick"
+            android:paddingStart="@dimen/_30dp"
+            android:text="@string/share"
+            android:textAppearance="@style/TextAppearance.MyApp.Body2"
+            android:textColor="@color/navtxt" />
+
+        <TextView
+            android:id="@+id/mTxtRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26dp"
+            android:drawableStart="@drawable/ic_nav_rate"
+            android:drawablePadding="@dimen/_15dp"
+            android:gravity="center_vertical"
+            android:onClick="mOnNavigationClick"
+            android:paddingStart="@dimen/_30dp"
+            android:text="@string/rate_us"
+            android:textAppearance="@style/TextAppearance.MyApp.Body2"
+            android:textColor="@color/navtxt" />
+
+        <TextView
+            android:id="@+id/mTxtPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26dp"
+            android:layout_marginBottom="@dimen/_26dp"
+            android:drawableStart="@drawable/ic_nav_privacy"
+            android:drawablePadding="@dimen/_15dp"
+            android:gravity="center_vertical"
+            android:onClick="mOnNavigationClick"
+            android:paddingStart="@dimen/_30dp"
+            android:text="@string/privacy"
+            android:textAppearance="@style/TextAppearance.MyApp.Body2"
+            android:textColor="@color/navtxt" />
+
+    </LinearLayout>
+</RelativeLayout>

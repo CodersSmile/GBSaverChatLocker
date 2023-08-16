@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1B684D</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#63CCA7</color>
+    <color name="whiteTheme">#FFFFFF</color>
+    <color name="blackTheme">#000000</color>
+    <color name="colorOnPrimary">#007D63</color>
+    <color name="menuclr" />
+    <color name="navtxt">#322929</color>
+    <color name="hint_color">#42000000</color>
+    <color name="transpherent">#00ffffff</color>
+    <color name="txtClr">#187554</color>
+    <color name="clrdeclaine">#9F9F9F</color>
+    <color name="gray">#AFAEAE</color>
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "868763024472",
+    "project_id": "gbstatusandchatlocker",
+    "storage_bucket": "gbstatusandchatlocker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868763024472:android:e8c12841fa3b1990899e2d",
+        "android_client_info": {
+          "package_name": "com.gbsaver.chatlocker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868763024472-1jtb88is9fse9gnc5rnm8fsvb11ku7ab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gbsaver.chatlocker",
+            "certificate_hash": "4485208cdcb89ff74208f128e7e81a1ee6901df1"
+          }
+        },
+        {
+          "client_id": "868763024472-1he3mhcqlivqlaf8a4kurrdu37p3480a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnfgNfNfPP5qqXAj3XILK8MtElPaG7grE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868763024472-1he3mhcqlivqlaf8a4kurrdu37p3480a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
